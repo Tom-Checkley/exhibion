@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	@include btn;
+}
+
+.btn:hover {
+		color: $white;
+	}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	a {
+		text-decoration: none;
+	}
+}
+
+.cf {
+	@include cf;
+}
+
+.grey {
+	color: $grey;
+}

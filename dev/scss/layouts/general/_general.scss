@@ -1,0 +1,47 @@
+#contact,
+#gallery {
+	header {
+		width: 100%;
+		position: static;
+		@media #{$tablet} {
+			display: flex;
+			justify-content: space-between; 
+			height: em(60px);
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+		nav {
+			display: flex;
+			align-items: center;
+			@media #{$tablet} {
+				width: 50%;
+			}
+			ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				@media #{$tablet} {
+					justify-content: flex-end;
+				}
+				li {
+					padding: 0 em(20px);
+					a {
+						@include font-weight-bold;
+						font-size: em(20px);
+					}
+				}
+			}
+		}
+	}
+	p {
+		margin: em(20px) 0 em(20px) 5%;
+		@media #{$tablet} {
+			width: 70%;
+		}
+		@media #{$desktop} {
+			width: 50%;
+		}
+	}
+}

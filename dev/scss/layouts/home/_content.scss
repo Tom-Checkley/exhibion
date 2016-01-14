@@ -1,0 +1,12 @@
+#home {
+	p {
+		width: 85%;
+		margin: em(20px) auto;
+		@media #{$tablet} {
+			width: 70%;
+		}
+		@media #{$desktop} {
+			width: 50%;
+		}
+	}
+}

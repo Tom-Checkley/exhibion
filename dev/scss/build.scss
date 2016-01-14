@@ -1,0 +1,21 @@
+@import '_normalize.scss';
+@import '_utilities.scss';
+@import '_mixins.scss';
+@import '_globals.scss';
+@import '_fonts.scss';
+@import 'layouts/_index.scss';
+
+body {
+	background: $black;
+	color: $white;
+	@include body-font;
+	@include font-weight-light;
+	margin: 0 auto;
+}
+
+span {
+	font-family: 'icomoon';
+	font-size: em(24px);
+	cursor: pointer;
+}
+

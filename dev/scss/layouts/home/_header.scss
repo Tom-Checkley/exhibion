@@ -1,0 +1,22 @@
+.main-head {
+	position: relative;
+	top: 0;
+	width: 100%;
+	background: $black;
+	.logo-holder {
+		width: 80%;
+		position: relative;
+		top: 0;
+		left: 0;
+		display: inline-block;
+	}
+	.sheep {
+		width: 20%;
+		float: right;
+		display: flex;
+		img {
+			align-self: center;
+			display: block;
+		}
+	}
+}

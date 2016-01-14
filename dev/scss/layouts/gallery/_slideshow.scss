@@ -1,0 +1,59 @@
+#gallery {
+	.gallery {
+		.head-scroll-holder {
+			@media #{$desktop} {
+				width: 80%;
+				display: inline-block;
+			}
+		}
+		.head-scroll {
+			width: 80%;
+			height: em(300px);
+			margin: em(36px) auto;
+			@media #{$desktop} {
+				height: em(400px);
+			}
+			ul {
+				list-style: none;
+				height: 100%;
+				li {
+					overflow: hidden;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					position: relative;
+					top: 0;
+					right: 0;
+					justify-content: center;
+					@media #{$tablet} {
+						display: block;
+					}
+					a {
+						align-self: center;
+						img {
+							display: block;
+							width: 100%;
+							height: auto;
+							position: relative;
+							left: 0;
+							@media #{$tablet} {
+								height: 100%;
+								width: auto;
+								margin: auto;
+							}
+						}
+					}
+				}
+				.port,
+				.sq {
+					display: block;
+					img {
+						height: 100%;
+						width: auto;
+						margin: auto;
+					}
+				}	
+			}
+		}
+	}
+}

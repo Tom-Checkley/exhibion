@@ -1,0 +1,23 @@
+#contact {
+	.contact {
+		width: 90%;
+		h1 {
+			margin-left: 5%;
+		}
+		li {
+			margin: em(6px) 0;
+		}
+		span {
+			margin: 0 em(6px);
+		}
+		.lsf-icon.mobile:before {
+			text-align: center;
+		}
+		a {
+			color: $white;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+}

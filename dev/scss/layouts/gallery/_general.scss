@@ -1,0 +1,15 @@
+#gallery {
+	.gallery {
+		position: relative;
+		height: calc(100% - 55px);
+		@media #{$desktop} {
+			overflow: hidden;
+		}
+		h1 {
+			margin-left: 5%;
+		}
+		p {
+			margin: 0 5% em(20px);
+		}
+	}
+}

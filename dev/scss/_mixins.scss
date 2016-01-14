@@ -1,0 +1,90 @@
+// ===================
+//  PAGE WIDTHS
+// ===================
+
+$tablet: 'screen and (min-width: 580px)';
+$desktop: 'screen and (min-width: 780px)';
+
+
+// ===================
+//  COLOURS
+// ===================
+
+$black	:		#000;
+$white	: 	#fff;
+$grey		:		#5c5b66;
+// $grey		: 	#373644;
+$red		: 	#700000;
+
+
+// ===================
+//  FONTS
+// ===================
+
+$font-url--google : 'http://fonts.googleapis.com/css?family=Roboto:900|Raleway:300)';
+$base__font-size: 16px;
+
+@mixin header-font {
+	font-family: 'Roboto', 'Helvetica neue', Helvetica, sans-serif;
+}
+
+@mixin body-font {
+	font-family: 'Raleway', 'Helvetica neue', Helvetica, sans-serif;
+}
+
+@mixin font-weight-bold {
+	font-weight: 900;
+}
+
+@mixin font-weight-light {
+	font-weight: 300;
+}
+
+@mixin keyframes ($animation-name) {
+  @-webkit-keyframes $animation-name{
+      @content;
+  }
+  @-moz-keyframes $animation-name{
+      @content;
+  }
+  @-ms-keyframes $animation-name{
+      @content;
+  }
+  @-o-keyframes $animation-name{
+      @content;
+  }
+  @keyframes $animation-name{
+      @content;
+  }
+}
+
+// ===================
+//  CLEARFIX
+// ===================
+
+@mixin cf {
+	:before {
+		content: "";
+		display: table;
+	}
+	:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+// ===================
+//  BUTTON STYLE
+// ===================
+
+@mixin btn {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	padding: .5rem;
+	display: block;
+	text-align: center;
+	color: $grey;
+}

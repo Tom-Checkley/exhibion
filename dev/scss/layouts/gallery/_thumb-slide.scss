@@ -1,0 +1,124 @@
+#gallery {
+	.gallery {
+		.thumb-slides {
+			position: relative;
+			top: 0;
+			margin-bottom: em(15px);
+			span {
+				margin: 0 em(12px);
+				display: inline-block;
+				&.icon-circle-left {
+					float: left;
+				}
+				&.icon-circle-right {
+					float: right;
+				}
+			}
+			.scroll-down {
+				display: none;
+				width: 100%;
+				text-align: center;
+				margin: em(21.44px) em(20px) em(20px) 0;
+			}
+			@media #{$desktop} {
+				width: 20%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: inline-block;
+				margin-bottom: 0;
+				.scroll-down {
+					display: block;
+				}
+			}
+			.scroll-down {
+				p {
+					width: 100%;
+					margin: 0 0 em(8px);
+				}
+			}
+			.scroll-across {
+				display: block;
+				text-align: center;
+				margin-bottom: em(16px);
+				p {
+					margin: 0;
+					display: inline-block;
+					width: calc(100% - 120px);
+				}
+				@media #{$desktop} {
+					display: none;
+				}
+			}
+			.thumb-wrapper {
+				display: relative;
+				top: 0;
+				height: 100%;
+				overflow: hidden;
+				@media #{$desktop} {
+					overflow-y: hidden;
+				}
+				.thumb-holder {
+					white-space: nowrap;
+					position: relative;
+					display: block;
+					height: em(100px);
+					@media #{$desktop} {
+						height: 100%;
+					}
+					ul {
+						height: 100%;
+						@media #{$desktop} {
+							display: flex;
+							flex-wrap: wrap;
+							position: relative;
+						}
+						li {
+							display: inline-block;
+							height: 100%;
+							margin: 0 em(3px);
+							@media #{$desktop} {
+								width: 45%;
+							// =================================================
+							// uncomment height for same height on right thumbs
+							// =================================================
+								// height: em(100px);
+
+							// =================================================
+							// comment out height for same height on right thumbs
+							// =================================================
+								height: auto;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin-bottom: em(6px);
+							// =================================================
+							// comment out height for same height on right thumbs
+							// =================================================
+							}
+							a {
+								height: 100%;
+								display: flex;
+								img {
+									height: 100%;
+									width: auto;
+									@media #{$desktop} {
+									// =================================================
+									// change width to auto, height 100% for same height
+									// =================================================
+										width: 100%;
+										align-self: center;
+										height: auto;
+									}
+								}
+								img:hover {
+									border: em(5px) $red solid;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

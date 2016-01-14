@@ -1,0 +1,20 @@
+#home {
+	nav {
+		margin: em(12px) auto;
+		@media #{$tablet} {
+			width: 70%;
+		}
+		@media #{$desktop} {
+			width: 50%;
+		}
+		ul {
+			display: flex;
+			justify-content: space-around;
+			a {
+				@include header-font;
+				@include font-weight-bold;
+				font-size: em(20px);
+			}
+		}
+	}
+}
